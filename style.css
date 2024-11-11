@@ -1,0 +1,199 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: #333;
+}
+
+
+/* Container for form */
+.container {
+    background: #efecec;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #4a47a3;
+}
+
+/* Style for form elements */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 1em;
+    color: #4a47a3;
+}
+
+input[type="text"], input[type="email"] {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    font-size: 1em;
+    width: 100%;
+}
+select{
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    font-size: 1em;
+    width: 100%;
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+    border-color: #6e8efb;
+    outline: none;
+}
+
+button {
+    background: #6e8efb;
+    color: #fff;
+    padding: 12px;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #4a47a3;
+}
+
+/* Success message and QR code styling */
+#successMessage {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e6f7ff;
+    border: 2px solid #6e8efb;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#successMessage p {
+    font-size: 1.1em;
+    color: #4a47a3;
+}
+
+.hidden {
+    display: none;
+}
+
+#qrcode {
+    margin-top: 15px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+}
+
+/* admin start*/
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Header Styling */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+/* Button Styling */
+#downloadAllPDF {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 1.1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#downloadAllPDF:hover {
+    background-color: #45a049;
+}
+
+/* Table Styling */
+#registrationsTable {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#registrationsTable th, #registrationsTable td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#registrationsTable th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+#registrationsTable tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+#registrationsTable tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+#registrationsTable tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
